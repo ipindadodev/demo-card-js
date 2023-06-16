@@ -1,13 +1,9 @@
-// Necesito sacar el valor del input txtcn1 y pasarlo a un entero
-
 var cn1 = parseInt();
 
 function cardLook() {
 
    var input = document.getElementById("txtcn1").value;
    var cardColor, cardProvider, cardLogo;
-
-    // Almacernarlo para usarlo.
     localStorage.setItem("cn1", cn1);
 
 
