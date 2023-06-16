@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con tarjeta</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <main>
+        <div class="desarrollado">
+            <p>Desarrollado con ❤️ <br /> por Ignacio Pindado <br /> Letamendía en <b>2023</b>.</p>
+        </div>
+        <div class="cardHolder">
+            <div class="cardForm">
+                <form action="" class="cardform" autocomplete="off">
+                        <label for="cardnumber">Número de la tarjeta</label>
+                        <fieldset id="cardNumber">
+                            <fieldset class="blocknumber">
+                                <input type="text" name="cardnumber1" id="txtcn1" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn2.focus()">
+                                <input type="text" name="cardnumber2" id="txtcn2" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn3.focus()">
+                                <input type="text" name="cardnumber3" id="txtcn3" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn4.focus()">
+                                <input type="text" name="cardnumber4" id="txtcn4" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn5.focus()">
+                            </fieldset>
+
+                            <fieldset class="blocknumber">
+                                <input type="text" name="cardnumber5" id="txtcn5" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn6.focus()">
+                                <input type="text" name="cardnumber6" id="txtcn6" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn7.focus()">
+                                <input type="text" name="cardnumber7" id="txtcn7" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn8.focus()">
+                                <input type="text" name="cardnumber8" id="txtcn8" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn9.focus()">
+                            </fieldset>
+
+                            <fieldset class="blocknumber">
+                                <input type="text" name="cardnumber9" id="txtcn9" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn10.focus()">
+                                <input type="text" name="cardnumber10" id="txtcn10" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn11.focus()">
+                                <input type="text" name="cardnumber11" id="txtcn11" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn12.focus()">
+                                <input type="text" name="cardnumber12" id="txtcn12" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn13.focus()">
+                            </fieldset>
+
+                            <fieldset class="blocknumber">
+                            <input type="text" name="cardnumber13" id="txtcn13" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn14.focus()">
+                            <input type="text" name="cardnumber14" id="txtcn14" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn15.focus()">
+                            <input type="text" name="cardnumber15" id="txtcn15" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn16.focus()">
+                            <input type="text" name="cardnumber16" id="txtcn16" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) expdmonth.focus()">
+                            </fieldset>
+                        </fieldset>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="expirationDate">Fecha de caducidad</label>
+                                    <fieldset id="cardExpiration">
+                                        <input type="text" name="expdmonth" id="txt-exp-1" min="01" max="12" placeholder="01" size="2" maxlength="2" onkeyup="if (this.value.length == this.getAttribute('maxlength')) expdyear.focus()">
+                                        <p id="separador-mes-ano">/</p>
+                                        <input type="text" name="expdyear" id="txt-exp-2" placeholder="2029" size="4" maxlength="4" onkeyup="if (this.value.length == this.getAttribute('maxlength')) cvv.focus()">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <label for="verificationCode">CVV</label>
+                                    <fieldset>
+                                        <input type="text" name="cvv" id="txt-cvv" placeholder="000" size="3">
+                                    </fieldset>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <br /> <br />
+                        <button type="submit">
+                            <b>Pagar</b>
+                        </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

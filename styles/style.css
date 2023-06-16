@@ -1,0 +1,91 @@
+* {
+    
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+
+/* body {
+    display: flex;
+} */
+
+main {
+    height: 100vh;
+    display: flex;
+    background-color: #ebebeb;
+}
+
+.cardHolder {
+    display: inline-block;
+    align-self: center;
+    align-content: center;
+    background-color: #fff;
+    height: 50vh;
+    width: 45vw;
+    border: #000 solid 2px;
+    border-radius: 15px;
+}
+
+.cardForm {
+    padding: 30px 0 0 0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align: middle;
+}
+
+input {
+    text-align: center;
+    border: none;
+    border-bottom: #234 solid 1px;
+}
+
+input:focus {
+    outline: 0;
+    background-color: rgba(192, 220, 237, 0.933);
+}
+
+fieldset {
+    border: none;
+}
+
+#separador-mes-ano {
+    display: inline;
+}
+
+.blocknumber {
+    display: inline-block;
+    gap: 1px;
+}
+
+button {
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 13px;
+    width: 100%;
+    border: none;
+    background-color: rgb(179, 61, 38);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 0 12px #000;
+}
+
+table {
+    display: flexbox;
+    min-width: 100%;
+    align-items: center;
+}
+
+.desarrollado {
+    position: absolute;
+    line-height: 1.7;
+    padding: 15px;
+    top: 13vh;
+    left: 15.5vw;
+    border: 2px rgb(179, 61, 38) solid;
+    text-align: center;
+    background-color: aliceblue;
+}
+
