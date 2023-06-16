@@ -19,7 +19,7 @@ function cardLook() {
             var cardLogo = "img/amex.svg";
             break;
         case "4":
-            var cardColor = "#023e73";
+            var cardColor = "#00ffff";
             var cardProvider = "Visa";
             var cardLogo = "img/visa.svg";
             break;
@@ -46,7 +46,7 @@ function cardLook() {
     cardName.innerHTML = cardProvider;
 
     var cardLogoDiv = document.getElementById("cardLogo");
-    cardLogoDiv.innerHTML = "<img src='" + cardLogo + "'height='50px'>";
+    cardLogoDiv.innerHTML = "<img src='" + cardLogo + "'height='75px'>";
 
     var cardLook = document.getElementById("cardLook");
     cardLook.innerHTML = "<p>" + cardProvider + "</p>";
