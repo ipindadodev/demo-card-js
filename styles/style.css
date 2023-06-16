@@ -89,11 +89,7 @@ table {
     background-color: aliceblue;
 }
 
-#cardLook {
-    display: flex;
-    align-items: right;
-    align-content: right;
-    height: 100%;
-    width: 100%;
+#cardInfo {
+    
     box-shadow: 1px 0 12px #000;
 }
