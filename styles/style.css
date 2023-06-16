@@ -89,3 +89,7 @@ table {
     background-color: aliceblue;
 }
 
+#cardInfo {
+    
+    box-shadow: 1px 0 12px #000;
+}
