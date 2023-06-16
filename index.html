@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago con tarjeta</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./index.js"></script>
+    <!-- Normalize CSS
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+    
+
 </head>
 <body>
     <main>
@@ -13,15 +16,16 @@
             <p>Desarrollado con ❤️ <br /> por Ignacio Pindado <br /> Letamendía en <b>2023</b>.</p>
         </div>
         <div class="cardHolder">
+            <div class="card-img">
+                <!-- Insert the correct image by input-->
+                <img id="cardLook" src="" alt=" ESO ES EL ALT Credit Card" width="50px">
+            </div>
             <div class="cardForm">
                 <form action="" class="cardform" autocomplete="off">
                         <label for="cardnumber">Número de la tarjeta</label>
                         <fieldset id="cardNumber">
                             <fieldset class="blocknumber">
-                                <input type="text" name="cardnumber1" id="txtcn1" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn2.focus()">
-                                <input type="text" name="cardnumber2" id="txtcn2" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn3.focus()">
-                                <input type="text" name="cardnumber3" id="txtcn3" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn4.focus()">
-                                <input type="text" name="cardnumber4" id="txtcn4" placeholder="0" size="1" maxlength="1" onkeyup="if (this.value.length == this.getAttribute('maxlength')) txtcn5.focus()">
+                                <input type="text" class="cardNumber" name="cardnumber1" id="txtcn1" placeholder="0" size="1" maxlength="1">
                             </fieldset>
 
                             <fieldset class="blocknumber">
@@ -73,5 +77,7 @@
             </div>
         </div>
     </main>
+    <script src="./scripts/cardLook.js"></script>
 </body>
+
 </html>
